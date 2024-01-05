@@ -6,7 +6,7 @@ const ItemListContainer = ({greeting}) => {
             
         
         <ul className="lista">
-        <p style={{color:'red'}}>{greeting}</p>
+        <p className='greeting'>{greeting}</p>
         <li className="nav-item">
                 
                                 <a className="nav-link" href="#">

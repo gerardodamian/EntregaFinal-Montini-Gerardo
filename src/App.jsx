@@ -11,7 +11,7 @@ const App = () => {
         <div>
             
             <NavBar />
-            <ItemListContainer greeting="¡Bienvenido a la tienda de deportes!"/>
+            <ItemListContainer greeting="¡Bienvenido a la tienda de los  1🏀🏐🥎 Deportes!"/>
             <Articulos/>
             <Footer/>
         </div>
