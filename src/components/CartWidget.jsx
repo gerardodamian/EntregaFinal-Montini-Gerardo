@@ -1,12 +1,15 @@
-import CarritoCom from "../assets/logo-carrito.png"
+import CarritoCom from "../assets/cart4.svg"
 
 const CartWidget = () => {
     return (
-        <div className="carrito">
-            <p className="cantidad-carrito">6</p>
-            <img src={CarritoCom} alt="carrito" width={70} />
-            
-        </div>
+        <button type="button" className="btn btn-primary position-relative">
+  <img src={CarritoCom} alt="carrito" width={40} />
+  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    4
+    <span className="visually-hidden">unread messages</span>
+  </span>
+</button>
+      
     );
 };
 export default CartWidget;

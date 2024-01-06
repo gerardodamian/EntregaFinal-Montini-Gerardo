@@ -12,8 +12,9 @@ const App = () => {
         <div>
             
             <NavBar />
-            <ItemListContainer greeting="¡Bienvenido a la tienda de los  1🏀🏐🥎 Deportes!"/>
+            
             <Carrusel/>
+            <ItemListContainer greeting="¡Bienvenido a la tienda de los  1🏀🏐🥎 Deportes!"></ItemListContainer>
             <Articulos/>
             <Footer/>
         </div>

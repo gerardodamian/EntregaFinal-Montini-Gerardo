@@ -1,18 +1,32 @@
-
 import CartWidget from "./CartWidget";
 import LogoChico from "./LogoA";
 
-
 const NavBar = () => {
     return (
-        
         <nav className="navbar bg-body-tertiary fixed-top">
-            
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     <LogoChico />
                 </a>
-                <CartWidget/>
+                <div className=" navbar">
+                    <a
+                        className="nav-link active p-3"
+                        aria-current="page"
+                        href="#"
+                    >
+                        Home
+                    </a>
+                    <a className="nav-link p-3" href="#">
+                        Productos
+                    </a>
+                    <a className="nav-link p-3" href="#">
+                        Contacto
+                    </a>
+                    <a className="nav-link disabled p-3" aria-disabled="true">
+                        Ubicación
+                    </a>
+                </div>
+                <CartWidget />
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -25,7 +39,6 @@ const NavBar = () => {
                 </button>
                 <div
                     className="offcanvas offcanvas-end"
-                    
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
                 >
@@ -35,7 +48,7 @@ const NavBar = () => {
                             id="offcanvasNavbarLabel"
                         >
                             <LogoChico />
-                            <CartWidget/>
+                            <CartWidget />
                         </h5>
                         <button
                             type="button"
@@ -75,7 +88,7 @@ const NavBar = () => {
                                     Pelotas
                                 </a>
                             </li>
-                            
+
                             <li className="nav-item dropdown">
                                 <a
                                     className="nav-link dropdown-toggle"
