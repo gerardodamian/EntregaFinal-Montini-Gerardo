@@ -1,11 +1,19 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 
-const ComprarCarr = ({ valor }) => {
-    return <h6 className="p-2">Total:{valor}</h6>;
+const Comprar = ({ valor, contador }) => {
+
+    const [precioProd, setPrecioProd] = useState (0);
+
+    useEffect(() =>{
+        setPrecioProd(Number(valor)* contador)
+    } ,[contador, valor])
+    return <h6 className="p-2">Total: ${precioProd}</h6>;
 };
 
-ComprarCarr.propTypes = {
+Comprar.propTypes = {
     valor: PropTypes.string.isRequired,
+    contador: PropTypes.string.isRequired,
 };
 
-export default ComprarCarr;
+export default Comprar;

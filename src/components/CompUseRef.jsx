@@ -1,15 +1,18 @@
+import PropTypes from "prop-types";
+
 import { useState } from "react";
-import ComprarCarr from "./Comprar";
+import Comprar from "./Comprar";
 
 
-const CompAgregar = () => {
+const CompAgregar = ({precio}) => {
     const [contador, setContador] = useState(0);
 
     const incrementar = () => {
         setContador(contador + 1);
     };
     const decrementar = () => {
-        setContador(contador - 1);
+        if (contador > 0) setContador(contador - 1);
+        
     };
     return (
         <>
@@ -22,8 +25,12 @@ const CompAgregar = () => {
                     Quitar
                 </button>
             </div>
-            <ComprarCarr valor={contador } />
+            <Comprar valor={precio } contador={contador} />
         </>
     );
+};
+
+CompAgregar.propTypes = {
+    precio: PropTypes.string.isRequired,
 };
 export default CompAgregar;
