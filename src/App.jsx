@@ -1,4 +1,5 @@
-import Articulos from "./components/Articulos";
+
+import Articulos2 from "./components/Articulos2";
 import Carrusel from "./components/Carrusel";
 import Footer from "./components/Footer";
 
@@ -14,8 +15,9 @@ const App = () => {
             <NavBar />
             
             <Carrusel/>
-            <ItemListContainer greeting="¡Bienvenido a la tienda de los  1🏀🏐🥎 Deportes!"></ItemListContainer>
-            <Articulos/>
+            <ItemListContainer greeting="¡Bienvenido a la tienda de los  🏒🏀🏐🥎 Deportes!"></ItemListContainer>
+            
+            <Articulos2/>
             <Footer/>
         </div>
     );

@@ -31,6 +31,6 @@ const CompAgregar = ({precio}) => {
 };
 
 CompAgregar.propTypes = {
-    precio: PropTypes.string.isRequired,
+    precio: PropTypes.number.isRequired,
 };
 export default CompAgregar;

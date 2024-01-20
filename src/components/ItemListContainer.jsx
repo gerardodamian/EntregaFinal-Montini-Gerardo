@@ -1,16 +1,28 @@
 import PropTypes from "prop-types";
+import ItemCount from "./itemCount";
+import arrayProductos from "./Articulos.json";
+import { useEffect, useState } from "react";
+import ItemList from "./ItemList";
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        const promesa = new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(arrayProductos);
+            }, 2000);
+        });
+        promesa.then((data) => {
+            setItems(data);
+        });
+    }, []);
+
     return (
-        <div className="container my-5">
-            <div className="row">
-                <div className="col text-center">
-                    <div className="alert alert-primary p-3 display-5" role="alert" >
-                        {greeting}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <>
+            <ItemList items={items} />
+            <ItemCount stock={10} />
+        </>
     );
 };
 ItemListContainer.propTypes = {

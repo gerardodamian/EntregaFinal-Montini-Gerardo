@@ -12,8 +12,8 @@ const Comprar = ({ valor, contador }) => {
 };
 
 Comprar.propTypes = {
-    valor: PropTypes.string.isRequired,
-    contador: PropTypes.string.isRequired,
+    valor: PropTypes.number.isRequired,
+    contador: PropTypes.number.isRequired,
 };
 
 export default Comprar;
