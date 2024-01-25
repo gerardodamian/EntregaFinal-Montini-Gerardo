@@ -1,30 +1,38 @@
 import CartWidget from "./CartWidget";
 import LogoChico from "./LogoA";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className="navbar bg-body-tertiary fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to={"/"}>
                     <LogoChico />
-                </a>
+                </Link>
                 <div className=" navbar">
-                    <a
+                    <Link
                         className="nav-link active p-3"
                         aria-current="page"
-                        href="#"
+                        to={"/"}
                     >
                         Home
-                    </a>
-                    <a className="nav-link p-3" href="#">
-                        Productos
-                    </a>
-                    <a className="nav-link p-3" href="#">
-                        Contacto
-                    </a>
-                    <a className="nav-link disabled p-3" aria-disabled="true">
-                        Ubicación
-                    </a>
+                    </Link>
+
+                    <Link className="nav-link p-3" href="#">
+                        Remeras
+                    </Link>
+                    <Link className="nav-link p-3" href="#">
+                        Pelotas
+                    </Link>
+                    <Link className="nav-link p-3" aria-disabled="true">
+                        Zapatillas
+                    </Link>
+                    <Link className="nav-link p-3" aria-disabled="true">
+                        Shorts
+                    </Link>
+                    <Link className="nav-link p-3" to={"/Articulos2"}>
+                        Importados
+                    </Link>
                 </div>
                 <CartWidget />
                 <button
@@ -47,7 +55,9 @@ const NavBar = () => {
                             className="offcanvas-title"
                             id="offcanvasNavbarLabel"
                         >
-                            <LogoChico />
+                        <Link className="navbar-brand" to={"/"}>
+                    <LogoChico />
+                </Link>
                             <CartWidget />
                         </h5>
                         <button
@@ -60,37 +70,42 @@ const NavBar = () => {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="nav-link active"
                                     aria-current="page"
-                                    href="#"
+                                    to={"/"}
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link className="nav-link" href="#">
                                     Remeras
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Pantalones
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link className="nav-link" href="#">
                                     Zapatillas
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link className="nav-link" href="#">
+                                    Shorts
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="#">
                                     Pelotas
-                                </a>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to={"/Articulos2"}>
+                                    Importados
+                                </Link>
                             </li>
 
                             <li className="nav-item dropdown">
-                                <a
+                                <Link
                                     className="nav-link dropdown-toggle"
                                     href="#"
                                     role="button"
@@ -98,23 +113,32 @@ const NavBar = () => {
                                     aria-expanded="false"
                                 >
                                     Deportes
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a className="dropdown-item" href="#">
+                                        <Link
+                                            className="dropdown-item"
+                                            href="#"
+                                        >
                                             Futbol
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a className="dropdown-item" href="#">
+                                        <Link
+                                            className="dropdown-item"
+                                            href="#"
+                                        >
                                             Basquet
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="dropdown-item" href="#">
+                                        <Link
+                                            className="dropdown-item"
+                                            href="#"
+                                        >
                                             Rugby
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>

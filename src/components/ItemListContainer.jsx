@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ItemCount from "./itemCount";
+
 import arrayProductos from "./Articulos.json";
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
@@ -21,7 +21,7 @@ const ItemListContainer = () => {
     return (
         <>
             <ItemList items={items} />
-            <ItemCount stock={10} />
+            
         </>
     );
 };

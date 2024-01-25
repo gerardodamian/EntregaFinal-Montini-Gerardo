@@ -118,5 +118,23 @@
         "image": "https://www.bompie.com.ar/media/catalog/product/cache/1e7c11b43132c034d445b386916b52f7/2/-/2-165599_5.jpg",
         "cantidad": 1,
         "categoria": "remeras"
+    },
+    {
+        "id": 15,
+        "nombre": "short adidas",
+        "precio": 35500,
+
+        "image": "https://www.opensports.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/G/U/GU9609_0.jpg",
+        "cantidad": 1,
+        "categoria": "remeras"
+    },
+    {
+        "id": 16,
+        "nombre": "short nike",
+        "precio": 36400,
+
+        "image": "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw2aa6a951/products/NICK0450-480/NICK0450-480-1.JPG",
+        "cantidad": 1,
+        "categoria": "remeras"
     }
 ]
