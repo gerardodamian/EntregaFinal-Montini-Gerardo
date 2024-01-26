@@ -47,4 +47,4 @@ const Carrusel = () => {
     </section>
     )
 }
-export default Carrusel
+export default Carrusel;

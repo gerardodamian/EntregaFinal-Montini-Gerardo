@@ -3,138 +3,161 @@
         "id": 1,
         "nombre": "Zapatillas adidas zero",
         "precio": 64900,
-
+        "description": "Lo mas optimo para practicar running.",
         "image": "https://media.solodeportes.com.ar/media/catalog/product/cache/faae2c37ab1d315e4b697a7f62b421b7/z/a/zapatillas-running-adidas-duramo-10-sl-azul-100010gw4080001-1.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "zapatillas"
     },
     {
         "id": 2,
         "nombre": "Zapatillas adidas terra",
         "precio": 55500,
-
+        "description": "La mejor zapatilla para salir a correr.",
         "image": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-adidas-racer-tr21-ni-o-ni-a-azul-100010gw6603001-1.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "zapatillas"
     },
     {
         "id": 3,
         "nombre": "Pelota Basquet",
         "precio": 107400,
+        "description": "La pelota que usan en la Liga Nacional.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_818322-MLA51666817127_092022-O.webp",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 4,
         "nombre": "Pelota Helicoidal",
         "precio": 17800,
+        "description": "El voley se juega mejor con esta pelota.",
         "image": "https://www.digitalsport.com.ar/files/products/64a3352c94acd-625010-500x500.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 5,
         "nombre": "Pelota Afa22",
         "precio": 84500,
+        "description": "La pelota que usan los campeones del mundo.",
         "image": "https://www.digitalsport.com.ar/files/products/64638860062a7-573040-500x500.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 6,
         "nombre": "PELOTA RWC",
         "precio": 39800,
+        "description": "Los Pumas juegan con ella a muerte.",
         "image": "https://d2izjnmtylvtfh.cloudfront.net/27643081-large_default/pelota-de-rugby-gilbert-nro-5-mundial-francia.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 7,
         "nombre": "PELOTA AL HILM",
         "precio": 84500,
+        "description": "Con esta pelota logramos ser campeones del mundo ⭐⭐⭐.",
+        
         "image": "https://www.digitalsport.com.ar/files/products/6419c8e08b74f-578521-500x500.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 8,
         "nombre": "Pelota Mundial",
         "precio": 39400,
+        "description": "Con esta pelota logramos ser campeones del mundo ⭐⭐⭐.",
         "image": "https://static.eldiario.es/clip/53508088-b292-417d-a8dd-b8f8f1dc8439_source-aspect-ratio_default_0.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "pelotas"
     },
     {
         "id": 9,
         "nombre": "Remera Los Pumas ",
         "precio": 12900,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAFk1X7DdKc6ky4YMuZYBSWLfhteg-0N0oFQmQwJ-gP1g5GjFocWrunQADfFCSxjfqso&usqp=CAU",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "remeras"
     },
     {
         "id": 10,
         "nombre": "Camiseta De Rugby",
         "precio": 15500,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/473/866/products/d1-5858f69f9e92ca249f16905804481007-240-0.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "remeras"
     },
     {
         "id": 11,
         "nombre": "Remera adidas",
         "precio": 16400,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb6PzbLhhshIy_bW2Ol9M80e6joTuMjQY3ig&usqp=CAU",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "remeras"
     },
     {
         "id": 12,
         "nombre": "Remera  Nike ",
         "precio": 19900,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwa73e312e/products/NI86F939-695/NI86F939-695-1.JPG",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "remeras"
     },
     {
         "id": 13,
         "nombre": "Camiseta Puma",
         "precio": 15500,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://media.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/r/e/remera-de-futbol-puma-individualcup-negra-640020658289050-1.jpg",
         "cantidad": 1,
+        "stock": 10,
         "categoria": "remeras"
     },
     {
         "id": 14,
         "nombre": "Remera Topper",
         "precio": 16400,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://www.bompie.com.ar/media/catalog/product/cache/1e7c11b43132c034d445b386916b52f7/2/-/2-165599_5.jpg",
         "cantidad": 1,
+        "stock": 25,
         "categoria": "remeras"
     },
     {
         "id": 15,
         "nombre": "short adidas",
         "precio": 35500,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://www.opensports.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/G/U/GU9609_0.jpg",
         "cantidad": 1,
-        "categoria": "remeras"
+        "stock": 20,
+        "categoria": "shorts"
     },
     {
         "id": 16,
         "nombre": "short nike",
         "precio": 36400,
-
+        "description": "La mejor calidad de tela y confección de alta performance.",
         "image": "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw2aa6a951/products/NICK0450-480/NICK0450-480-1.JPG",
         "cantidad": 1,
-        "categoria": "remeras"
+        "stock": 15,
+        "categoria": "shorts"
     }
 ]

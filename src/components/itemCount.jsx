@@ -1,51 +1,83 @@
-import { useState } from "react"
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({ stock }) => {
     const [counter, setCounter] = useState(0);
     const [itemStock, setItemStock] = useState(stock);
 
     const incrementar = () => {
         if (counter < itemStock) {
-            setCounter (counter + 1)
+            setCounter(counter + 1);
         }
-    }
+    };
 
     const decrementar = () => {
         if (counter > 1) {
-            setCounter (counter - 1);
+            setCounter(counter - 1);
         }
-    }
+    };
 
     const onAdd = () => {
-            if (counter <= itemStock) {
-                setItemStock(itemStock - counter);
-                setCounter(1)
-                console.log("agregaste " + counter + " productos al carrito. Quedan " + (itemStock - counter) + " productos disponibles");
-            }
-    }
+        if (counter <= itemStock) {
+            setItemStock(itemStock - counter);
+            setCounter(1);
+            console.log(
+                "agregaste " +
+                    counter +
+                    " productos al carrito. Quedan " +
+                    (itemStock - counter) +
+                    " productos disponibles"
+            );
+        }
+    };
+
+    useEffect(() => {
+        setItemStock(stock);
+    }, [stock]);
+
     return (
         <>
-        <div className="row my-3">
-            <div className="col-md-2">
-                <div className="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" className="btn btn-primary" onClick={decrementar}>-</button>
-                    <button type="button" className="btn btn-primary">{counter}</button>
-                    <button type="button" className="btn btn-primary" onClick={incrementar}>+</button>
+            <div className="row my-3">
+                <div className="col-md-4">
+                    <div
+                        className="btn-group"
+                        role="group"
+                        aria-label="Basic example"
+                    >
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={decrementar}
+                        >
+                            -
+                        </button>
+                        <button type="button" className="btn btn-primary">
+                            {counter}
+                        </button>
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={incrementar}
+                        >
+                            +
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="row">
-            <div className="col-md-2">
-                
-                    <button type="button" className="btn btn-primary" onClick={onAdd}>Agragar al Carrito</button>
+            <div className="row">
+                <div className="col-md-5">
+                    <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={onAdd}
+                    >
+                        Agragar al Carrito
+                    </button>
                 </div>
             </div>
-        
-        
         </>
-    )
-}
+    );
+};
 ItemCount.propTypes = {
     stock: PropTypes.number.isRequired,
 };

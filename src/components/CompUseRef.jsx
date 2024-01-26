@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import Comprar from "./Comprar";
 
-
-const CompAgregar = ({precio}) => {
+const CompAgregar = ({ precio }) => {
     const [contador, setContador] = useState(0);
 
     const incrementar = () => {
@@ -12,7 +11,6 @@ const CompAgregar = ({precio}) => {
     };
     const decrementar = () => {
         if (contador > 0) setContador(contador - 1);
-        
     };
     return (
         <>
@@ -25,7 +23,7 @@ const CompAgregar = ({precio}) => {
                     Quitar
                 </button>
             </div>
-            <Comprar valor={precio } contador={contador} />
+            <Comprar valor={precio} contador={contador} />
         </>
     );
 };

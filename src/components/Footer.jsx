@@ -45,22 +45,34 @@ const Footer = () => {
                     <div className="col-md-10">
                         <ul className="nav">
                             <li className="nav-item">
-                                <a className="nav-link text-secondary f-6" href="#">
+                                <a
+                                    className="nav-link text-secondary f-6"
+                                    href="#"
+                                >
                                     Politica de Privacidad
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary f-6" href="#">
+                                <a
+                                    className="nav-link text-secondary f-6"
+                                    href="#"
+                                >
                                     Defensa del Consumidor
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary f-6" href="#">
+                                <a
+                                    className="nav-link text-secondary f-6"
+                                    href="#"
+                                >
                                     Proteccion de datos personales
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary f-6" href="#">
+                                <a
+                                    className="nav-link text-secondary f-6"
+                                    href="#"
+                                >
                                     Contacto
                                 </a>
                             </li>
