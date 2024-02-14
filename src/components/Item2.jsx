@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const Item = ({ item }) => {
+const Item2 = ({ item }) => {
     return (
         <div className="col-md-3  text-center">
             <div className="card ">
                 <Link
-                    to={"/item/" + item.id}
+                    to={"/item-premium/" + item.id}
                     className="text-decoration-none text-dark"
                 >
                     <img
@@ -23,8 +23,12 @@ const Item = ({ item }) => {
     );
 };
 
-Item.propTypes = {
-    item: PropTypes.array.isRequired,
+Item2.propTypes = {
+    item: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        nombre: PropTypes.string.isRequired
+    }).isRequired
 };
 
-export default Item;
+export default Item2;

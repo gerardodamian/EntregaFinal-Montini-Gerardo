@@ -49,6 +49,13 @@ const NavBar = () => {
                     <NavLink
                         className="nav-link text-dark p-3 fs-5"
                         activeclassname="active"
+                        to={"/ItemListContainer2"}
+                    >
+                        Premium
+                    </NavLink>
+                    <NavLink
+                        className="nav-link text-dark p-3 fs-5"
+                        activeclassname="active"
                         to={"/Articulos2"}
                     >
                         Importados
@@ -128,6 +135,14 @@ const NavBar = () => {
                                     to={"/categoria/pelotas"}
                                 >
                                     Pelotas
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link"
+                                    to={"/ItemListContainer2"}
+                                >
+                                    Premium
                                 </Link>
                             </li>
                             <li className="nav-item">

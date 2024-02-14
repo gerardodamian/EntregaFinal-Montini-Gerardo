@@ -1,9 +1,11 @@
-import PropTypes from "prop-types";
+
 
 import arrayProductos from "./Articulos.json";
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+
+
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
@@ -24,13 +26,16 @@ const ItemListContainer = () => {
         });
     }, [id]);
 
+    
+    
     return (
         <>
+            
             <ItemList items={items} />
         </>
     );
 };
-ItemListContainer.propTypes = {
-    greeting: PropTypes.string.isRequired,
-};
+
+
+
 export default ItemListContainer;

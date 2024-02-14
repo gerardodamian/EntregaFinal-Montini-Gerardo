@@ -5,9 +5,9 @@ const ProductCard = ({ product }) => {
     const handleCompra = () => {};
     return (
         <div className="card">
-            <img src={product.img} alt={product.nombre} />
+            <img src={product.image} alt={product.nombre} />
             <h3 className="nombre">{product.nombre}</h3>
-            <p className="price">${product.precio}</p>
+            <p className="precio">${product.precio}</p>
             <CompUseRef precio={product.precio} />
 
             <button className="comprar" onClick={handleCompra}>
@@ -22,7 +22,7 @@ ProductCard.propTypes = {
         id: PropTypes.number.isRequired,
         nombre: PropTypes.string.isRequired,
         precio: PropTypes.number.isRequired,
-        img: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
         cantidad: PropTypes.number.isRequired,
     }).isRequired,
 };
