@@ -2,11 +2,19 @@ import PropTypes from "prop-types";
 import ItemCount from "./itemCount";
 
 import Rendering from "./Rendering";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({ item }) => {
+    const { addItem } = useContext(CartContext);
+
+    const onAdd = (cantidad) => {
+        addItem(item, cantidad);
+    };
+
     return (
         <din className="container">
-            <Rendering/>
+            <Rendering />
             <div className="row">
                 <div className="col-md-5 offset-md-1 text-center">
                     <img
@@ -21,7 +29,7 @@ const ItemDetail = ({ item }) => {
                     <p>
                         <b>${item?.precio}</b>
                     </p>
-                    <ItemCount stock={item?.stock} />
+                    <ItemCount stock={item?.stock} onAdd={onAdd} />
                 </div>
             </div>
         </din>
@@ -29,6 +37,6 @@ const ItemDetail = ({ item }) => {
 };
 
 ItemDetail.propTypes = {
-    item: PropTypes.array.isRequired,
+    item: PropTypes.object.isRequired,
 };
 export default ItemDetail;

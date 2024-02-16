@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ stock, onAdd }) => {
     const [counter, setCounter] = useState(0);
     const [itemStock, setItemStock] = useState(stock);
+    const [itemAdded, setItemAdded] = useState(false);
 
     const incrementar = () => {
         if (counter < itemStock) {
@@ -17,17 +19,12 @@ const ItemCount = ({ stock }) => {
         }
     };
 
-    const onAdd = () => {
+    const addToCart = () => {
         if (counter <= itemStock) {
             setItemStock(itemStock - counter);
             setCounter(1);
-            console.log(
-                "agregaste " +
-                    counter +
-                    " productos al carrito. Quedan " +
-                    (itemStock - counter) +
-                    " productos disponibles"
-            );
+            onAdd(counter);
+            setItemAdded(true);
         }
     };
 
@@ -66,13 +63,19 @@ const ItemCount = ({ stock }) => {
             </div>
             <div className="row">
                 <div className="col-md-5">
-                    <button
-                        type="button"
-                        className="btn btn-primary"
-                        onClick={onAdd}
-                    >
-                        Agragar al Carrito
-                    </button>
+                    {itemAdded ? (
+                        <Link to={"/cart"} className="btn btn-primary">
+                            Terminar tu compra
+                        </Link>
+                    ) : (
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            onClick={addToCart}
+                        >
+                            Agregar al carrito
+                        </button>
+                    )}
                 </div>
             </div>
         </>
@@ -80,6 +83,7 @@ const ItemCount = ({ stock }) => {
 };
 ItemCount.propTypes = {
     stock: PropTypes.number.isRequired,
+    onAdd: PropTypes.func.isRequired,
 };
 
 export default ItemCount;

@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 
 import Item2 from "./Item2";
 
-
-
 function ItemList2({ items }) {
     return (
         <div className="container my-5">
