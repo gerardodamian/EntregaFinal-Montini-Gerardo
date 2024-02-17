@@ -30,6 +30,15 @@ const Cart = () => {
             <div className="row">
                 <div className="col text-center">
                     <h1>Productos seleccionados</h1>
+                   
+                </div>
+                <div className="col text-center">
+                   
+                    <td>
+                        <Link to={"/checkout"} className="btn btn-primary ">
+                            Checkout
+                        </Link>
+                    </td>
                 </div>
             </div>
 
@@ -72,14 +81,6 @@ const Cart = () => {
                                 <td colSpan={4}>Suma total</td>
                                 <td>${sumaTotalProductos()}</td>
                                 <td>&nbsp;</td>
-                                <td>
-                                    <Link
-                                        to={"/checkout"}
-                                        className="btn btn-primary"
-                                    >
-                                        Checkout
-                                    </Link>
-                                </td>
                             </tr>
                         </tbody>
                     </table>
