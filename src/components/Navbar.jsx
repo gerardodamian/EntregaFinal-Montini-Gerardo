@@ -107,7 +107,7 @@ const NavBar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    className="nav-link"
+                                    className="nav-link1"
                                     to={"/categoria/remeras"}
                                 >
                                     Remeras
@@ -115,7 +115,7 @@ const NavBar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    className="nav-link"
+                                    className="nav-link1"
                                     to={"/categoria/zapatillas"}
                                 >
                                     Zapatillas
@@ -123,7 +123,7 @@ const NavBar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink
-                                    className="nav-link"
+                                    className="nav-link1"
                                     to={"/categoria/shorts"}
                                 >
                                     Shorts
@@ -131,7 +131,7 @@ const NavBar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    className="nav-link"
+                                    className="nav-link1"
                                     to={"/categoria/pelotas"}
                                 >
                                     Pelotas
@@ -139,14 +139,14 @@ const NavBar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link
-                                    className="nav-link"
+                                    className="nav-link1"
                                     to={"/ItemListContainer2"}
                                 >
                                     Premium
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={"/Articulos2"}>
+                                <Link className="nav-link1" to={"/Articulos2"}>
                                     Importados
                                 </Link>
                             </li>
