@@ -113,6 +113,9 @@ h3 {
 .nav-link{
     display: none;
 }
+.btn-group{
+    align-items: center;
+}
 
 
 }

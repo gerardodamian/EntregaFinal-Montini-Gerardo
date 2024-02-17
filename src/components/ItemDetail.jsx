@@ -16,14 +16,14 @@ const ItemDetail = ({ item }) => {
         <din className="container">
             <Rendering />
             <div className="row">
-                <div className="col-md-5 offset-md-1 text-center">
+                <div className="col-md-5 offset-md-1 text-center ">
                     <img
                         src={item?.image}
                         alt={item?.nombre}
-                        className="img-fluid"
+                        className="img-fluid "
                     />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 text-center ">
                     <h1>{item?.nombre}</h1>
                     <p>{item?.descripcion}</p>
                     <p>

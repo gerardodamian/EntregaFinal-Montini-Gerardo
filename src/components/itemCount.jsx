@@ -35,7 +35,7 @@ const ItemCount = ({ stock, onAdd }) => {
     return (
         <>
             <div className="row my-3">
-                <div className="col-md-4">
+                <div className="col-md-4 d-flex justify-content-center">
                     <div
                         className="btn-group"
                         role="group"
@@ -62,7 +62,9 @@ const ItemCount = ({ stock, onAdd }) => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-5 d-flex justify-content-center">
+                    {" "}
+                    {/* Aquí se centran los botones */}
                     {itemAdded ? (
                         <Link to={"/cart"} className="btn btn-primary">
                             Terminar tu compra
@@ -80,6 +82,7 @@ const ItemCount = ({ stock, onAdd }) => {
             </div>
         </>
     );
+
 };
 ItemCount.propTypes = {
     stock: PropTypes.number.isRequired,

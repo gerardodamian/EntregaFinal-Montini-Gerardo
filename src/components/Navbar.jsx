@@ -20,7 +20,7 @@ const NavBar = () => {
 
                     <NavLink
                         className="nav-link text-dark p-3 fs-5"
-                        activeclassname="active"
+                        active classname="active"
                         to={"/categoria/remeras"}
                     >
                         Remeras
