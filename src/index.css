@@ -88,3 +88,34 @@ h3 {
     background-color: rgb(161, 230, 207);
     padding: 15px;
 }
+.carr-1 {
+    margin-top: 60px; /* Ajusta la altura del encabezado */
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 850px) {
+
+.carr-1 {
+ width: 100%;
+    max-width: 1200px; /* Ajusta el máximo ancho del carrusel según tus necesidades */
+    margin: 0 auto; 
+    
+    margin-top: 80px;
+    
+    
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que el encabezado esté por encima del contenido */
+}
+.nav-link{
+    display: none;
+}
+
+
+}
+
+
+

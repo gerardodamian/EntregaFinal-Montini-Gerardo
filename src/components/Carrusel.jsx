@@ -1,6 +1,5 @@
 import ImgCarr from '../assets/bici-01.png'
-import ImgFut from '../assets/futbol.jpg'
-import ImgVol from '../assets/voley.jpg'
+
 
 const Carrusel = () => {
     return (
@@ -34,17 +33,13 @@ const Carrusel = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img
-                            src={ImgCarr}
-                            alt="Carrusel 1"
-                            style={{ width: "100%", height: "auto" }}
-                        />
+                        <img src={ImgCarr} alt="Carrusel 1" style={{ width: '100%', height: 'auto' }} />
                     </div>
                     <div className="carousel-item">
-                        <img src={ImgFut} width={1900} height={600} />
+                        <img src={ImgCarr} alt="Carrusel 1" style={{ width: '100%', height: 'auto' }} />
                     </div>
                     <div className="carousel-item">
-                        <img src={ImgVol} width={1900} height={600} />
+                        <img src={ImgCarr} alt="Carrusel 1" style={{ width: '100%', height: 'auto' }} />
                     </div>
                 </div>
             </div>
